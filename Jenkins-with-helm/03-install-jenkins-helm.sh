@@ -1,0 +1,1 @@
+helm install jenkins jenkins/jenkins --namespace=jenkins -f custom-values.yaml
