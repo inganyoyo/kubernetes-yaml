@@ -9,6 +9,7 @@
 -   Ubuntu 20.04
 
 #### Kuberbetes
+- version: 1.24.4-00
 - Container Runtime: containerd
 - CNI: flannel
 

@@ -65,7 +65,10 @@ echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https:/
 # Fetch package list
 sudo apt-get update
 
-sudo apt-get install -y kubelet kubeadm kubectl
+version="1.24.4-00"
+echo "Install Version: $version"
+
+sudo apt-get install -y kubelet=${version} kubeadm=${version} kubectl=${version}
 
 # Prevent them from being updated automatically
 sudo apt-mark hold kubelet kubeadm kubectl

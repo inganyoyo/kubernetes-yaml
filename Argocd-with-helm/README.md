@@ -9,7 +9,7 @@
 
 ```
 git clone https://github.com/inganyoyo/kubernetes-yaml.git
-cd ./Argocd-with-helm
+cd ./kubernetes-yaml/Argocd-with-helm
 ```
 
 ### Install Jenkins

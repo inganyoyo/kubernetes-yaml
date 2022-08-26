@@ -1,6 +1,10 @@
 controller:
   adminUser: "admin"
   adminPassword: "password"
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hostName: jenkins.inganyoyo.kr
 
 persistence:
   enabled: true

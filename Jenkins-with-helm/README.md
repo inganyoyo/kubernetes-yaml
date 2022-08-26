@@ -8,7 +8,7 @@
 
 ```
 git clone https://github.com/inganyoyo/kubernetes-yaml.git
-cd ./Jenkins-with-helm
+cd ./kubernetes-yaml/Jenkins-with-helm
 ```
 
 #### change chmod
