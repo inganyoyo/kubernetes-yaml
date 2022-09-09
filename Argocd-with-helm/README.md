@@ -1,7 +1,7 @@
 # Argo-with-helm
 
-- You can install ArgoCd via helm
-- with ingress
+-   You can install ArgoCd via helm
+-   with ingress
 
 ---
 
@@ -12,7 +12,7 @@ git clone https://github.com/inganyoyo/kubernetes-yaml.git
 cd ./kubernetes-yaml/Argocd-with-helm
 ```
 
-### Install Jenkins
+### Install ArgoCd
 
 ```
 kubectl apply -f 00-namespace.yaml
@@ -22,5 +22,7 @@ kubectl apply -f 01-argocd-server-ingress.yaml
 ```
 
 ### reference
+
 #### https://artifacthub.io/packages/helm/argo/argo-cd
+
 #### https://argo-cd.readthedocs.io/en/stable/operator-manual/ingress/

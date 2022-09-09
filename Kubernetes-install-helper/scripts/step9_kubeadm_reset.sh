@@ -6,3 +6,4 @@
   sudo apt purge kubectl -y
   sudo rm -rf ~/.kube/
   sudo rm -rf /etc/kubernetes/ingan
+  

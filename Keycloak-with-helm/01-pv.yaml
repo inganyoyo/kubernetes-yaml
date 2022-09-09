@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: keycloak
+  namespace: postgre
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  storageClassName: sc-local-storage
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: "/share_data/keycloak"
