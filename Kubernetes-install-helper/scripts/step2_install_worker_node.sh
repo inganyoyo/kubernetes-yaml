@@ -50,7 +50,11 @@ curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --de
 echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
 sudo apt-get update
-sudo apt install -y kubeadm=1.27.1-00 kubelet=1.27.1-00 kubectl=1.27.1-00
+
+version="1.27.1-00"
+echo "Install Version: $version"
+
+sudo apt install -y kubeadm=${version} kubelet=${version} kubectl=${version}
 sudo apt-mark hold kubelet kubeadm kubectl
 
 sudo systemctl start kubelet
