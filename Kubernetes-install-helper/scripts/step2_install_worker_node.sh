@@ -1,3 +1,10 @@
+# See if swap is enabled
+swapon --show
+# Turn off swap
+sudo swapoff -a
+# Disable swap completely
+sudo sed -i -e '/swap/d' /etc/fstab
+
 # Forwarding IPv4 and letting iptables see bridged traffic
 cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
 overlay
