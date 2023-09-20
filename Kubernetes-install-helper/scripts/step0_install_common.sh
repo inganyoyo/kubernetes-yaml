@@ -1,4 +1,4 @@
-echo "ssh-keygen 생성"
+echo "ssh-keygen 생성 "
 ssh-keygen -t rsa
 
 echo "copy"
