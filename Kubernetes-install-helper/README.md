@@ -29,9 +29,10 @@ sudo chmod +x ./scripts/*.sh
 ### Install Kubernetes
 
 ```
+./scripts/step0_install_common.sh
 ./scripts/step1_install_control_plane.sh
-./scripts/step2_install_worker_node.sh #1~N
-./scripts/step3_install_control_plane.sh
+./scripts/step2_install_worker_node.sh
+./scripts/step9_kubeadm_reset.sh
 ```
 
 #### Reset kubeadm
