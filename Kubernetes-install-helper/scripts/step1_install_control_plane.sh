@@ -62,7 +62,7 @@ sudo systemctl enable kubelet
 # Remove missing `cni-dir` argument from kubelet if present
 sed -i 's/KUBELET_ARGS=.*/KUBELET_ARGS=/' /etc/kubernetes/kubelet.env
 
-sudo kubeadm init --pod-network-cidr=10.10.10.0/24\
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16\
   --cri-socket unix:///run/containerd/containerd.sock
 
 mkdir -p $HOME/.kube
