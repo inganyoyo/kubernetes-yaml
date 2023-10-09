@@ -51,7 +51,7 @@ echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://a
 
 sudo apt-get update
 
-version="1.27.1-00"
+version="1.27.2-00"
 echo "Install Version: $version"
 
 sudo apt install -y kubeadm=${version} kubelet=${version} kubectl=${version}
