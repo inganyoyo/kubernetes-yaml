@@ -81,7 +81,7 @@ sudo kubeadm config images pull --cri-socket unix:///run/containerd/containerd.s
 
 sudo sysctl -p
 sudo kubeadm init \
-  --apiserver-advertise-address 10.10.10.100\
+  --apiserver-advertise-address 192.168.1.10\
   --pod-network-cidr=10.244.0.0/16\
   --cri-socket unix:///run/containerd/containerd.sock
 
