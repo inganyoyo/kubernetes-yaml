@@ -936,7 +936,7 @@ externalDatabase:
   port: 25432
   user: keycloak
   database: keycloak
-  password: "Dlwngus!@34"
+  password: "keycloak"
   existingSecret: ""
   existingSecretPasswordKey: ""
 
