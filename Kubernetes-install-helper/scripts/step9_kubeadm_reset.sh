@@ -5,5 +5,5 @@
   sudo apt purge kubelet -y
   sudo apt purge kubectl -y
   sudo rm -rf ~/.kube/
-  sudo rm -rf /etc/kubernetes/ingan
+  sudo rm -rf /etc/kubernetes/inganyoyo
   
