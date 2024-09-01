@@ -51,10 +51,7 @@ curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.31/deb/Release.key | sudo gpg --
 
 sudo apt-get update
 
-version="1.31.0-00"
-echo "Install Version: $version"
-
-sudo apt install -y kubeadm=${version} kubelet=${version} kubectl=${version}
+sudo apt install -y kubeadm kubelet kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 
 sudo systemctl start kubelet
