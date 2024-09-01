@@ -1,0 +1,14 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true" # <- Default Storage Class
+  name: nfs-csi
+mountOptions:
+- nfsvers=4.1
+parameters:
+  server: 192.168.1.215 # Nfs Server
+  share: /share/k8s-nfs
+provisioner: nfs.csi.k8s.io
+reclaimPolicy: Retain # default value is Delete
+volumeBindingMode: Immediate
